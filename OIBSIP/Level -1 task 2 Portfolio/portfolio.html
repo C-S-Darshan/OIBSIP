@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body{
+            margin: 0px;
+            background-color: rgb(19, 19, 19);
+            color: rgb(216, 216, 216);
+        }
+        #name{
+            margin-top: 150px;
+            margin-left:100px;
+            font-size:60px;
+        }
+        #subtitle{
+            margin: 0px;
+            margin-left:100px;
+            font-size: 40px;
+            text-justify: center;
+        }
+        #subtitles{
+            text-align: center;
+            font-size: 70px;
+        }
+        #intro{
+            width: 80%;
+            height: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-top: 120px;
+            margin-bottom: 150px;
+            box-shadow: 15px 15px 15px rgb(216, 216, 216),-15px -15px 15px rgb(216, 216, 216),15px -15px 15px rgb(216, 216, 216),-15px 15px 15px rgb(216, 216, 216);
+        }
+        #intro img{
+            float: right;
+            margin: 100px;
+        }
+        #navbar{
+            background-color: grey;
+            text-align: right;
+            padding: 30px 40px;
+        }
+        .navbarinks{
+            margin-right: 50px;
+            padding: 10px 10px;
+            text-decoration: none;
+            border: 1px solid white;
+            border-radius: 5px;
+            font-size: 20px;
+            color: white;
+            width: 300px;
+        }
+        .navbarinks:hover{
+            background-color: white;
+            color: black;
+        }
+        .certifs,.certifs1,.certifs2,.certifs3,.certifs4{
+            border: 1px solid black;
+            width: 80%;
+            height: 400px;
+            margin: 100px auto;
+            border-radius: 10px;
+            
+        }
+        .certifs{
+            box-shadow: 15px 15px 15px rgb(255, 255, 0),-15px -15px 15px rgb(255, 255, 0),15px -15px 15px rgb(255, 255, 0),-15px 15px 15px rgb(255, 255, 0);
+        }
+        .certifs1{
+            box-shadow: 15px 15px 15px rgb(255, 0, 191),-15px -15px 15px rgb(255, 0, 191),15px -15px 15px rgb(255, 0, 191),-15px 15px 15px rgb(255, 0, 191);
+        }
+        .certifs2{
+            box-shadow: 15px 15px 15px rgb(255, 153, 0),-15px -15px 15px rgb(255, 153, 0),15px -15px 15px rgb(255, 153, 0),-15px 15px 15px rgb(255, 153, 0);
+        }
+        .certifs3{
+            box-shadow: 15px 15px 15px rgb(140, 0, 255),-15px -15px 15px rgb(140, 0, 255),15px -15px 15px rgb(140, 0, 255),-15px 15px 15px rgb(140, 0, 255);
+        }
+        .certifs4{
+            box-shadow: 15px 15px 15px rgb(0, 255, 255),-15px -15px 15px rgb(0, 255, 255),15px -15px 15px rgb(0, 255, 255),-15px 15px 15px rgb(0, 255, 255);
+        }
+        .projects,.projects1{
+            border: 1px solid black;
+            width: 80%;
+            height: 400px;
+            margin: 100px auto;
+            border-radius: 10px;
+        }
+        .projects{
+            box-shadow: 15px 15px 15px rgb(255, 0, 0),-15px -15px 15px rgb(255, 0, 0),15px -15px 15px rgb(255, 0, 0),-15px 15px 15px rgb(255, 0, 0);
+        }
+        .projects1{
+            box-shadow: 15px 15px 15px rgb(0, 255, 0),-15px -15px 15px rgb(0, 255, 0),15px -15px 15px rgb(0, 255, 0),-15px 15px 15px rgb(0, 255, 0);
+        }
+        .certifs img{
+            padding: 5px;
+        }
+        .projtitle{
+            text-align: center;
+            font-size: 50px;
+        }
+        .projdesc{
+            padding: 50px;
+            font-size: 40px;
+        }
+        #end{
+            background-color: grey;
+            text-align: center;
+            padding: 30px 40px;
+        }
+        .endlinks{
+            margin-right: 50px;
+            padding: 10px 10px;
+            text-decoration: none;
+            border: 1px solid white;
+            border-radius: 5px;
+            font-size: 20px;
+            color: white;
+            width: 300px;
+        }
+        .endlinks:hover{
+            background-color: white;
+            color: black;
+        }
+        #contactme{
+            width: 60%;
+            margin: 150px auto;
+            border: 1px solid black;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 50px;
+            box-shadow: 15px 15px 15px rgb(216, 216, 216),-15px -15px 15px rgb(216, 216, 216),15px -15px 15px rgb(216, 216, 216),-15px 15px 15px rgb(216, 216, 216);
+        }
+        #contactme input{
+            font-size: 50px;
+            border-radius: 10px;
+        }
+        #sbmtbtn{
+            margin-bottom: 50px;
+            background-color: rgb(19, 19, 19);
+            color: rgb(216, 216, 216);
+            border-radius: 10px;
+        }
+        #sbmtbtn:hover{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header id="navbar">
+        <nav>
+            <a class="navbarinks" href="portfolio.html#projsec">   Projects   </a>
+            <a class="navbarinks" href="portfolio.html#certifsec"> Certificates </a>
+            <a class="navbarinks" href="portfolio.html#contactsec">  Contact me  </a>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <img src="Images/Screenshot (3075).png" alt="Agent D" width="500px">
+            <h1 id="name">Hello, I'm C S Darshan</h1>
+            <p style="font-size: 30px;margin-left:100px;">Under Graduate Student</p>
+            <p id="subtitle">I'm curently in my pre final year of B.E in CSE at MVJ college of engineering.<br>
+                I'm an aspiring web developer, I've made this Portfolio webpage for the Fulfilment of my Web development intership at Oasis Infobyte.
+            </p>
+            
+        </section>
+    </section>
+    <section id="projsec">
+        <h1 id="subtitles">Projects</h1>
+        <div class="projects">
+            <img src="Images/tic tac toe.png" alt="HTML certificate" width="500px" style="float: left;margin: 30px;">
+            <h1 class="projtitle">Tic Tac Toe</h1>
+            <p class="projdesc">
+                The project was implemented using C++. It offers users to play Tic Tac Toe with another user locally ar play by themselves. The project also has Leaderboard to keep track of scores.
+            </p>
+        </div>
+        <div class="projects1">
+            <img src="Images/matrix images.png" alt="HTML certificate" width="380px" style="float: right;margin: 30px;">
+            <h1 class="projtitle">Matrix Manipulator</h1>
+            <p class="projdesc">
+                The project was implemented using java. It offered multiple methods to manipulate a matrix sush as transpose inverse and more.
+            </p>
+        </div>
+        <div class="projects">
+            <img src="Images/student academic tracker.JPG" alt="HTML certificate" width="460px" style="float: left;margin: 30px;">
+            <h1 class="projtitle">Student Academic Tracker</h1>
+            <p class="projdesc">
+                Provides students easy access to theit academic detais such as Attendace, Internal marks and their details, and an admin page to make changes to the student Information.
+            </p>
+        </div>
+    </section>
+        <section id="certifsec">
+            <h1 id="subtitles">Certificates</h1>
+            <div class="certifs">
+                <img src="Images/udemy html.jpg" alt="HTML certificate" width="450px" style="float: left;margin: 30px;">
+                <h1 class="projtitle">HTML - Basics to Advance</h1>
+                <p class="projdesc">
+                    This course Helped me brush up my basics on HTML and revise HTML.
+                </p>
+            </div>
+            <div class="certifs1">
+                <img src="Images/udemy css.jpg" alt="HTML certificate" width="450px" style="float: right;margin: 30px;">
+                <h1 class="projtitle">CSS - Basics to Advance</h1>
+                <p class="projdesc">
+                    This course Helped me brush up my basics on CSS and revise topics like flex box and grid.
+                </p>
+            </div>
+            <div class="certifs2">
+                <img src="Images/basics of python.JPG" alt="HTML certificate" width="450px" style="float: left;margin: 30px;">
+                <h1 class="projtitle">Basics of python</h1>
+                <p class="projdesc">
+                    This course covered the basics of python.
+                </p>
+            </div>
+            <div class="certifs3">
+                <img src="Images/Introduction to AI.JPG" alt="HTML certificate" width="450px" style="float: right;margin: 30px;">
+                <h1 class="projtitle">Introduction to AI</h1>
+                <p class="projdesc">
+                    As a beginer with little to no idea about what Ai is, this couse helped me understand what AI is and the basics of AI.
+                </p>
+            </div>
+            <div class="certifs4">
+                <img src="Images/Time management.JPG" alt="HTML certificate" width="450px" style="float: left;margin: 30px;">
+                <h1 class="projtitle">Time Management</h1>
+                <p class="projdesc">
+                    We all complain about lack of time to pursue things we like or want to do, and this helped me priortise tasks and manage time effectively.
+                </p>
+            </div>
+        </section>
+        <section id="contactsec">
+            <div id="contactme">
+            <h1 class="subtitle" style="font-size: 70px;">Contact me</h1>
+                <form>
+                    <P>Enter your name : <input type="text" name="name" placeholder="Name"></P>
+                    <p>Enter your email : <input type="email" name="email" placeholder="Email"></p>
+                    <p>Leave your message :</p>
+                    <textarea name="message" cols="100" rows="15"></textarea>
+                    <br><input type="submit" id="sbmtbtn" value="Send">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer id="end">
+        <h2>You can find me on these platforms</h2>
+        <nav>
+            <a class="endlinks" href=""><span> Linkedin</span></a>
+            <a class="endlinks" href=""><span>GitHub</span></a>
+            <a class="endlinks" href=""><span>Instagram</span></a>
+        </nav>
+    </footer>
+</body>
+</html>
